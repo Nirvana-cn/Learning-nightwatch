@@ -1,0 +1,5 @@
+大多数情况下，为了执行命令或断言，nightwatch需要向WebDriver服务发起至少两次请求，第一次请求通过css选择器或Xpath表达式确定一个元素的位置，第二次请求才会在元素上执行实际的命令或断言。
+
+安装WebDriver服务可以通过直接下载二进制文件或使用NPM软件包来完成。
+
+使用Selenium Standalone Server作为管理各种浏览器驱动程序和服务的de-factor标准，但不再需要从Nightwatch 1.0开始，也不推荐使用，除非您针对旧浏览器（如Internet Explorer）进行测试。
