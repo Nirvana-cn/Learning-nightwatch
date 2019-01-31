@@ -3,8 +3,8 @@
   "output_folder" : "output",
   "webdriver" : {
     "start_process": true,
-    "server_path": "../drivers/geckodriver.exe",
-    "port": 7055,
+    "host": "127.0.0.1",
+    "port": 4444,
     "log_path": "output"
   },
 
