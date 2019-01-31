@@ -3,3 +3,16 @@
 安装WebDriver服务可以通过直接下载二进制文件或使用NPM软件包来完成。
 
 使用Selenium Standalone Server作为管理各种浏览器驱动程序和服务的de-factor标准，但不再需要从Nightwatch 1.0开始，也不推荐使用，除非您针对旧浏览器（如Internet Explorer）进行测试。
+
+```json
+"webdriver" : {
+    "start_process": true,
+    "server_path": "node_modules/.bin/chromedriver",
+    "port": 9515
+  },
+```
+
+官方教程实在是造成了严重的误导，关键是你安装完chromedriver这个包后，`node_modules/.bin/chromedriver`目录下面确实有一个`chromedriver.exe`文件。
+
+chrome端口号9515
+firefox端口号
