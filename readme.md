@@ -12,7 +12,10 @@
   },
 ```
 
-官方教程实在是造成了严重的误导，关键是你安装完chromedriver这个包后，`node_modules/.bin/chromedriver`目录下面确实有一个`chromedriver.exe`文件。
+官方教程实在是造成了严重的误导，关键是你安装完chromedriver这个包后，`node_modules/.bin/chromedriver`目录下面确实有一个`chromedriver`文件，但是我们需要的是`chromedriver.exe`文件。
 
 chrome端口号9515
-firefox端口号
+
+firefox端口号4444
+
+** window下，firefox 默认寻找路径为C:\Program Files\Mozilla Firefox，如果安装在其它路径，需要指定moz:firefoxOptions属性或者使用--binary PATH命令，告诉geckodriver启动路径。
