@@ -1,0 +1,30 @@
+{
+  "src_folders" : ["examples"],
+  "output_folder": "output",
+  "webdriver" : {
+    "start_process": true,
+    "log_path": "output",
+    "port": 9515
+  },
+
+  "test_settings" : {
+    "default" : {
+      "desiredCapabilities": {
+        "browserName": "chrome"
+      },
+      "globals":{
+        "a":"1",
+        "b":"2"
+      }
+    },
+    "another" : {
+      "desiredCapabilities": {
+        "browserName": "chrome"
+      },
+      "globals":{
+        "a":"2",
+        "c":"3"
+      }
+    }
+  }
+}
