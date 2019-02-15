@@ -19,3 +19,13 @@ chrome端口号9515
 firefox端口号4444
 
 ** window下，firefox 默认寻找路径为C:\Program Files\Mozilla Firefox，如果安装在其它路径，需要指定moz:firefoxOptions属性或者使用--binary PATH命令，告诉geckodriver启动路径。
+
+当你想要关闭测试时，请记住始终调用`.end()`方法，以便正确关闭浏览器会话。
+
+## before[Each] and after[Each] hooks
+
+在测试中，`nightwatch`提供标准的`before/after`和`beforeEach/afterEach`的钩子。
+
+`before`和`after`将分别在执行测试套件之前和之后运行，而`beforeEach`和`afterEach`分别在每个测试用例之前和之后运行。
+
+
