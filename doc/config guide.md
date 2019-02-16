@@ -35,14 +35,14 @@
 |server_path|	string|	none|	WebDriver程序所在的路径|
 |port|	integer	|	|Nightwatch尝试连接的端口号|
 |host|	string	|	|只有当WebDriver服务运行在不同机器上时才需要指定|
-|log_path Optional|	string或boolean|none|	日志输出路径，默认为当前目录|
-|cli_args Optional|	object	|none|	要传递给WebDriver进程的cli参数列表。每个WebDriver实现都有所不同|
-|request_timeout_options Optional|	object|	timeout:60000, retry_attempts:0|指定超时和重连次数|
-|username Optional|	string	|none|	用户名，常用于云端测试|
-|access_key Optional|	string	|none	|与username一同使用|
-|proxy Optional	|string|	none|	代理，使用node-proxy-agent|
-|default_path_prefix Optional|	string	|	| 使用Selenium Server时有时需要。 要添加到所有请求的前缀|
-|use_legacy_jsonwire Optional| boolean|	false	|一些WebDriver的实现（Safari，Edge）既支持W3C WebDriver API，也支持传统的JSON Wire（Selenium）API 设置|
+|log_path （可选）|	string或boolean|none|	日志输出路径，默认为当前目录|
+|cli_args （可选）|	object	|none|	要传递给WebDriver进程的cli参数列表。每个WebDriver实现都有所不同|
+|request_timeout_options （可选）|	object|	timeout:60000, retry_attempts:0|指定超时和重连次数|
+|username （可选）|	string	|none|	用户名，常用于云端测试|
+|access_key （可选）|	string	|none	|与username一同使用|
+|proxy （可选）	|string|	none|	代理，使用node-proxy-agent|
+|default_path_prefix （可选）|	string	|	| 使用Selenium Server时有时需要。 要添加到所有请求的前缀|
+|use_legacy_jsonwire （可选）| boolean|	false	|一些WebDriver的实现（Safari，Edge）既支持W3C WebDriver API，也支持传统的JSON Wire（Selenium）API 设置|
 
 
 ## Test Settings
@@ -101,7 +101,6 @@ module.exports = {
 
 ```json
 {
-  ...
   "test_settings" : {
     "default" : {
       "launch_url" : "http://localhost",

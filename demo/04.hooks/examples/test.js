@@ -8,15 +8,18 @@ module.exports = {
     },
 
     beforeEach : function(browser) {
-
+        console.log('Begin test...');
     },
 
     afterEach : function(browser) {
-
+        console.log('Finish test...');
     },
 
     'step one' : function (browser) {
-
+        browser
+            .url('http://iceiceice.top')
+            .waitForElementVisible('body', 1000)
+            .assert.title('冰，水为之而寒于水')
     },
 
     'step two' : function (browser) {
