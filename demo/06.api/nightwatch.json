@@ -1,0 +1,18 @@
+{
+  "src_folders" : ["examples"],
+  "output_folder": "output",
+  "webdriver" : {
+    "start_process": true,
+    "log_path": "output",
+    "port": 9515
+  },
+
+  "test_settings" : {
+    "default" : {
+      "launch_url": "https://www.google.com.hk/",
+      "desiredCapabilities": {
+        "browserName": "chrome"
+      }
+    }
+  }
+}

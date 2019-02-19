@@ -1,17 +1,16 @@
 {
-  "name": "05.env",
+  "name": "06.api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "chrome": "rd /s/q output && nightwatch -e chrome",
-    "firefox": "rd /s/q output && nightwatch -e firefox"
+    "start": "rd /s/q output && nightwatch"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "geckodriver": "^1.14.1",
-    "nightwatch": "^1.0.18"
+    "chromedriver": "^2.46.0",
+    "nightwatch": "^1.0.19"
   }
 }
