@@ -20,7 +20,21 @@
 
 chrome端口号9515
 
-firefox端口号4444
+firefox端口号4444，firefox需要传入`debug`参数才能运行，这个坑真是坑死我了😂😂😂。
+
+```json
+{
+"webdriver": {
+    "start_process": true,
+    "server_path": "./node_modules/geckodriver/geckodriver.exe",
+    "log_path": "output",
+    "port": 4444,
+    "cli_args": [
+      "--log", "debug"
+    ]
+  }
+}
+```
 
 ** window下，firefox 默认寻找路径为C:\Program Files\Mozilla Firefox，如果安装在其它路径，需要指定moz:firefoxOptions属性或者使用--binary PATH命令，告诉geckodriver启动路径。
 
